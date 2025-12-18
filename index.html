@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Indian's Barber | Premium Barbershop in Milpitas, CA</title>
-  <meta name="description" content="Bay Area's finest barbershop. Expert haircuts, beard trims, and signature head massages. 4.9★ rated. Walk-ins welcome!">
+  <title>The Hilo Barber Studio | Premier Barbershop in Hilo, HI</title>
+  <meta name="description" content="Hilo's finest barbershop. Expert haircuts, fades, and professional grooming. 5.0★ rated. Book online or walk-in!">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,37 +13,38 @@
   
   <style>
     :root {
-      --gradient-primary: linear-gradient(135deg, #d4a574 0%, #b8860b 100%);
-      --gradient-dark: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
-      --gradient-accent: linear-gradient(135deg, #8b4513 0%, #654321 100%);
-      --color-gold: #d4a574;
-      --color-gold-dark: #b8860b;
-      --color-dark: #0a0a0a;
-      --color-dark-light: #1a1a1a;
+      --gradient-primary: linear-gradient(135deg, #00b4d8 0%, #0077b6 100%);
+      --gradient-secondary: linear-gradient(135deg, #06d6a0 0%, #048a81 100%);
+      --gradient-sunset: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+      --gradient-dark: linear-gradient(135deg, #023047 0%, #011627 100%);
+      --color-ocean: #0077b6;
+      --color-ocean-light: #00b4d8;
+      --color-tropical: #06d6a0;
+      --color-sunset: #ff6b6b;
+      --color-sand: #f4d58d;
+      --color-dark: #011627;
+      --color-dark-light: #023047;
       --color-light: #ffffff;
-      --color-gray-50: #fafafa;
-      --color-gray-100: #f5f5f5;
-      --color-gray-200: #e5e5e5;
-      --color-gray-300: #d4d4d4;
-      --color-gray-400: #a3a3a3;
-      --color-gray-500: #737373;
-      --color-gray-600: #525252;
-      --color-gray-700: #404040;
-      --color-gray-800: #262626;
-      --color-gray-900: #171717;
+      --color-gray-50: #f8f9fa;
+      --color-gray-100: #f1f3f5;
+      --color-gray-200: #e9ecef;
+      --color-gray-300: #dee2e6;
+      --color-gray-400: #adb5bd;
+      --color-gray-500: #6c757d;
+      --color-gray-600: #495057;
+      --color-gray-700: #343a40;
+      --color-gray-800: #212529;
+      --color-gray-900: #0d1117;
     }
-
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
     html {
       scroll-behavior: smooth;
       overflow-x: hidden;
     }
-
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       color: var(--color-gray-800);
@@ -51,12 +52,10 @@
       line-height: 1.7;
       overflow-x: hidden;
     }
-
     img {
       max-width: 100%;
       display: block;
     }
-
     .animated-bg {
       position: fixed;
       top: 0;
@@ -64,29 +63,26 @@
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: linear-gradient(135deg, #d4a574 0%, #1a1a1a 50%, #b8860b 100%);
+      background: linear-gradient(135deg, #00b4d8 0%, #06d6a0 25%, #023047 50%, #0077b6 75%, #048a81 100%);
       background-size: 400% 400%;
-      animation: gradientShift 15s ease infinite;
-      opacity: 0.02;
+      animation: gradientShift 20s ease infinite;
+      opacity: 0.03;
     }
-
     @keyframes gradientShift {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
-
     .top-alert {
       background: var(--gradient-primary);
-      color: var(--color-dark);
-      padding: 12px 20px;
+      color: white;
+      padding: 14px 20px;
       text-align: center;
       font-size: 14px;
       font-weight: 600;
       position: relative;
       overflow: hidden;
     }
-
     .top-alert::before {
       content: '';
       position: absolute;
@@ -97,38 +93,32 @@
       background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
       animation: shimmer 3s infinite;
     }
-
     @keyframes shimmer {
       0% { left: -100%; }
       100% { left: 100%; }
     }
-
     .top-alert i {
       margin-right: 8px;
       animation: pulse 2s infinite;
     }
-
     @keyframes pulse {
       0%, 100% { opacity: 1; }
       50% { opacity: 0.7; }
     }
-
     .header {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(10, 10, 10, 0.98);
+      background: rgba(1, 22, 39, 0.98);
       backdrop-filter: blur(20px) saturate(180%);
       -webkit-backdrop-filter: blur(20px) saturate(180%);
-      border-bottom: 1px solid rgba(212, 165, 116, 0.2);
+      border-bottom: 1px solid rgba(0, 180, 216, 0.2);
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
       transition: all 0.3s ease;
     }
-
     .header.scrolled {
       box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
     }
-
     .nav-container {
       max-width: 1400px;
       margin: 0 auto;
@@ -138,7 +128,6 @@
       justify-content: space-between;
       gap: 40px;
     }
-
     .logo {
       display: flex;
       align-items: center;
@@ -146,27 +135,24 @@
       text-decoration: none;
       transition: transform 0.3s ease;
     }
-
     .logo:hover {
       transform: translateY(-2px);
     }
-
     .logo-icon {
-      width: 52px;
-      height: 52px;
+      width: 56px;
+      height: 56px;
       background: var(--gradient-primary);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       font-weight: 800;
-      color: var(--color-dark);
-      font-size: 24px;
-      box-shadow: 0 8px 24px rgba(212, 165, 116, 0.5);
+      color: white;
+      font-size: 26px;
+      box-shadow: 0 8px 24px rgba(0, 180, 216, 0.5);
       position: relative;
       overflow: hidden;
     }
-
     .logo-icon::before {
       content: '';
       position: absolute;
@@ -178,40 +164,34 @@
       transform: rotate(45deg);
       animation: logoShine 3s infinite;
     }
-
     @keyframes logoShine {
       0% { transform: translateX(-100%) rotate(45deg); }
       100% { transform: translateX(100%) rotate(45deg); }
     }
-
     .logo-text {
       display: flex;
       flex-direction: column;
       gap: 2px;
     }
-
     .logo-title {
       font-family: 'Playfair Display', serif;
       font-size: 24px;
       font-weight: 800;
-      color: var(--color-gold);
-      letter-spacing: 1px;
+      color: var(--color-ocean-light);
+      letter-spacing: 0.5px;
     }
-
     .logo-subtitle {
       font-size: 11px;
-      color: var(--color-gray-400);
+      color: var(--color-tropical);
       font-weight: 500;
       text-transform: uppercase;
       letter-spacing: 2px;
     }
-
     .nav-links {
       display: flex;
       gap: 32px;
       align-items: center;
     }
-
     .nav-links a {
       text-decoration: none;
       color: var(--color-gray-300);
@@ -220,7 +200,6 @@
       position: relative;
       transition: color 0.3s ease;
     }
-
     .nav-links a::after {
       content: '';
       position: absolute;
@@ -232,21 +211,17 @@
       transition: width 0.3s ease;
       border-radius: 2px;
     }
-
     .nav-links a:hover {
-      color: var(--color-gold);
+      color: var(--color-ocean-light);
     }
-
     .nav-links a:hover::after {
       width: 100%;
     }
-
     .header-actions {
       display: flex;
       gap: 12px;
       align-items: center;
     }
-
     .btn {
       padding: 12px 24px;
       border-radius: 12px;
@@ -261,48 +236,49 @@
       cursor: pointer;
       white-space: nowrap;
     }
-
     .btn-primary {
       background: var(--gradient-primary);
-      color: var(--color-dark);
-      box-shadow: 0 8px 24px rgba(212, 165, 116, 0.4);
+      color: white;
+      box-shadow: 0 8px 24px rgba(0, 180, 216, 0.4);
     }
-
     .btn-primary:hover {
       transform: translateY(-2px);
-      box-shadow: 0 12px 32px rgba(212, 165, 116, 0.6);
+      box-shadow: 0 12px 32px rgba(0, 180, 216, 0.6);
     }
-
+    .btn-secondary {
+      background: var(--gradient-secondary);
+      color: white;
+      box-shadow: 0 8px 24px rgba(6, 214, 160, 0.4);
+    }
+    .btn-secondary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(6, 214, 160, 0.6);
+    }
     .btn-ghost {
       background: transparent;
-      color: var(--color-gold);
-      border: 2px solid rgba(212, 165, 116, 0.3);
+      color: var(--color-ocean-light);
+      border: 2px solid rgba(0, 180, 216, 0.3);
     }
-
     .btn-ghost:hover {
-      background: rgba(212, 165, 116, 0.1);
-      border-color: var(--color-gold);
+      background: rgba(0, 180, 216, 0.1);
+      border-color: var(--color-ocean-light);
     }
-
     .btn-white {
       background: white;
       color: var(--color-dark);
     }
-
     .btn-white:hover {
       transform: translateY(-2px);
       box-shadow: 0 12px 32px rgba(255, 255, 255, 0.3);
     }
-
     .mobile-menu-btn {
       display: none;
       background: none;
       border: none;
       font-size: 24px;
       cursor: pointer;
-      color: var(--color-gold);
+      color: var(--color-ocean-light);
     }
-
     .hero {
       position: relative;
       padding: 140px 40px 120px;
@@ -310,7 +286,6 @@
       background: var(--gradient-dark);
       color: white;
     }
-
     .hero::before {
       content: '';
       position: absolute;
@@ -318,23 +293,24 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: radial-gradient(circle at 20% 30%, rgba(212, 165, 116, 0.15), transparent 50%),
-                  radial-gradient(circle at 80% 70%, rgba(184, 134, 11, 0.15), transparent 50%);
+      background: radial-gradient(circle at 20% 30%, rgba(0, 180, 216, 0.15), transparent 50%),
+                  radial-gradient(circle at 80% 70%, rgba(6, 214, 160, 0.15), transparent 50%);
       z-index: 0;
     }
-
     .hero::after {
-      content: '';
+      content: '🌺';
       position: absolute;
-      top: 0;
-      right: 0;
-      width: 50%;
-      height: 100%;
-      background: url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=1200&q=80') center/cover;
-      opacity: 0.15;
+      font-size: 400px;
+      opacity: 0.03;
+      top: -100px;
+      right: -100px;
       z-index: 0;
+      animation: float 10s ease-in-out infinite;
     }
-
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-30px) rotate(5deg); }
+    }
     .hero-container {
       max-width: 1400px;
       margin: 0 auto;
@@ -345,11 +321,9 @@
       position: relative;
       z-index: 1;
     }
-
     .hero-content {
       max-width: 650px;
     }
-
     .hero-content h1 {
       font-family: 'Playfair Display', serif;
       font-size: clamp(48px, 7vw, 78px);
@@ -358,14 +332,12 @@
       margin-bottom: 24px;
       letter-spacing: -2px;
     }
-
     .hero-content h1 .gradient-text {
-      background: var(--gradient-primary);
+      background: linear-gradient(135deg, #00b4d8 0%, #06d6a0 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
-
     .hero-description {
       font-size: 20px;
       color: var(--color-gray-300);
@@ -373,7 +345,6 @@
       line-height: 1.8;
       max-width: 600px;
     }
-
     .hero-rating {
       display: inline-flex;
       align-items: center;
@@ -382,48 +353,41 @@
       padding: 20px;
       background: rgba(255, 255, 255, 0.05);
       border-radius: 16px;
-      border: 1px solid rgba(212, 165, 116, 0.2);
+      border: 1px solid rgba(0, 180, 216, 0.2);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
       max-width: fit-content;
     }
-
     .rating-stars {
       font-size: 28px;
-      color: var(--color-gold);
+      color: var(--color-sand);
     }
-
     .rating-info h3 {
       font-size: 32px;
       font-weight: 800;
-      color: var(--color-gold);
+      color: var(--color-ocean-light);
       margin-bottom: 4px;
     }
-
     .rating-info p {
       font-size: 14px;
       color: var(--color-gray-400);
     }
-
     .hero-actions {
       display: flex;
       gap: 16px;
       margin-bottom: 48px;
       flex-wrap: wrap;
     }
-
     .hero-stats {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 24px;
       padding-top: 32px;
-      border-top: 1px solid rgba(212, 165, 116, 0.2);
+      border-top: 1px solid rgba(0, 180, 216, 0.2);
     }
-
     .stat-item {
       text-align: center;
     }
-
     .stat-number {
       font-size: 32px;
       font-weight: 800;
@@ -434,7 +398,6 @@
       display: block;
       margin-bottom: 4px;
     }
-
     .stat-label {
       font-size: 13px;
       color: var(--color-gray-400);
@@ -442,94 +405,55 @@
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
-
     .hero-image {
       position: relative;
-      animation: float 6s ease-in-out infinite;
+      animation: floatSlow 8s ease-in-out infinite;
     }
-
-    @keyframes float {
+    @keyframes floatSlow {
       0%, 100% { transform: translateY(0px); }
       50% { transform: translateY(-20px); }
     }
-
     .hero-card {
       background: rgba(255, 255, 255, 0.05);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       border-radius: 24px;
       padding: 32px;
-      border: 1px solid rgba(212, 165, 116, 0.3);
+      border: 1px solid rgba(0, 180, 216, 0.3);
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     }
-
     .hero-card h3 {
       font-size: 24px;
       margin-bottom: 16px;
       color: white;
     }
-
-    .hero-form {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .form-input {
-      padding: 16px 20px;
-      border: 2px solid rgba(212, 165, 116, 0.3);
-      border-radius: 12px;
-      font-size: 16px;
-      font-family: inherit;
-      transition: all 0.3s ease;
-      background: rgba(255, 255, 255, 0.05);
-      color: white;
-      width: 100%;
-    }
-
-    .form-input::placeholder {
-      color: var(--color-gray-400);
-    }
-
-    .form-input:focus {
-      outline: none;
-      border-color: var(--color-gold);
-      background: rgba(255, 255, 255, 0.08);
-      box-shadow: 0 0 0 4px rgba(212, 165, 116, 0.1);
-    }
-
     .image-carousel-section {
       padding: 0;
       background: var(--color-dark);
       overflow: hidden;
     }
-
     .carousel-container {
       position: relative;
       width: 100%;
       height: 550px;
       overflow: hidden;
     }
-
     .carousel-track {
       display: flex;
       transition: transform 0.5s ease;
       height: 100%;
     }
-
     .carousel-slide {
       min-width: 100%;
       height: 100%;
       position: relative;
     }
-
     .carousel-slide img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       filter: brightness(0.7);
     }
-
     .carousel-overlay {
       position: absolute;
       inset: 0;
@@ -539,20 +463,17 @@
       padding: 60px;
       color: white;
     }
-
     .carousel-content h3 {
       font-family: 'Playfair Display', serif;
       font-size: 42px;
       margin-bottom: 12px;
       font-weight: 800;
-      color: var(--color-gold);
+      color: var(--color-ocean-light);
     }
-
     .carousel-content p {
       font-size: 18px;
       opacity: 0.9;
     }
-
     .carousel-btn {
       position: absolute;
       top: 50%;
@@ -569,23 +490,19 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--color-dark);
-      box-shadow: 0 8px 24px rgba(212, 165, 116, 0.5);
+      color: white;
+      box-shadow: 0 8px 24px rgba(0, 180, 216, 0.5);
     }
-
     .carousel-btn:hover {
       transform: translateY(-50%) scale(1.1);
-      box-shadow: 0 12px 32px rgba(212, 165, 116, 0.7);
+      box-shadow: 0 12px 32px rgba(0, 180, 216, 0.7);
     }
-
     .carousel-btn-prev {
       left: 40px;
     }
-
     .carousel-btn-next {
       right: 40px;
     }
-
     .carousel-indicators {
       position: absolute;
       bottom: 30px;
@@ -595,47 +512,40 @@
       gap: 12px;
       z-index: 10;
     }
-
     .carousel-indicator {
       width: 12px;
       height: 12px;
       border-radius: 50%;
-      background: rgba(212, 165, 116, 0.4);
+      background: rgba(0, 180, 216, 0.4);
       border: none;
       cursor: pointer;
       transition: all 0.3s ease;
     }
-
     .carousel-indicator.active {
-      background: var(--color-gold);
+      background: var(--color-ocean-light);
       width: 32px;
       border-radius: 6px;
     }
-
     .trust-badges {
       padding: 80px 40px;
       background: var(--color-gray-50);
     }
-
     .container {
       max-width: 1400px;
       margin: 0 auto;
     }
-
     .badges-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 40px;
       text-align: center;
     }
-
     .badge-item {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 16px;
     }
-
     .badge-icon {
       width: 80px;
       height: 80px;
@@ -645,43 +555,37 @@
       align-items: center;
       justify-content: center;
       font-size: 36px;
-      color: var(--color-dark);
-      box-shadow: 0 12px 40px rgba(212, 165, 116, 0.4);
+      color: white;
+      box-shadow: 0 12px 40px rgba(0, 180, 216, 0.4);
     }
-
     .badge-item h3 {
       font-size: 18px;
       color: var(--color-dark);
     }
-
     .badge-item p {
       color: var(--color-gray-600);
       font-size: 14px;
     }
-
     .services {
       padding: 100px 40px;
       background: white;
     }
-
     .section-header {
       text-align: center;
       margin-bottom: 64px;
     }
-
     .section-label {
       display: inline-block;
       padding: 8px 20px;
-      background: rgba(212, 165, 116, 0.1);
+      background: rgba(0, 180, 216, 0.1);
       border-radius: 20px;
       font-size: 13px;
       font-weight: 600;
-      color: var(--color-gold-dark);
+      color: var(--color-ocean);
       text-transform: uppercase;
       letter-spacing: 1px;
       margin-bottom: 16px;
     }
-
     .section-title {
       font-family: 'Playfair Display', serif;
       font-size: clamp(36px, 5vw, 54px);
@@ -690,20 +594,17 @@
       color: var(--color-dark);
       letter-spacing: -1px;
     }
-
     .section-description {
       font-size: 18px;
       color: var(--color-gray-600);
       max-width: 700px;
       margin: 0 auto;
     }
-
     .services-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 32px;
     }
-
     .service-card {
       background: white;
       border: 2px solid var(--color-gray-100);
@@ -713,7 +614,6 @@
       position: relative;
       overflow: hidden;
     }
-
     .service-card::before {
       content: '';
       position: absolute;
@@ -726,22 +626,18 @@
       transition: opacity 0.4s ease;
       z-index: 0;
     }
-
     .service-card:hover::before {
       opacity: 0.05;
     }
-
     .service-card:hover {
       transform: translateY(-8px);
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
-      border-color: var(--color-gold);
+      border-color: var(--color-ocean-light);
     }
-
     .service-card > * {
       position: relative;
       z-index: 1;
     }
-
     .service-icon {
       width: 64px;
       height: 64px;
@@ -752,35 +648,24 @@
       justify-content: center;
       margin-bottom: 24px;
       font-size: 28px;
-      color: var(--color-dark);
-      box-shadow: 0 8px 24px rgba(212, 165, 116, 0.4);
+      color: white;
+      box-shadow: 0 8px 24px rgba(0, 180, 216, 0.4);
     }
-
     .service-card h3 {
       font-size: 22px;
       margin-bottom: 12px;
       color: var(--color-dark);
       font-weight: 700;
     }
-
-    .service-price {
-      font-size: 28px;
-      font-weight: 800;
-      color: var(--color-gold-dark);
-      margin-bottom: 12px;
-    }
-
     .service-card p {
       color: var(--color-gray-600);
       margin-bottom: 20px;
       line-height: 1.7;
     }
-
     .service-card ul {
       list-style: none;
       padding: 0;
     }
-
     .service-card li {
       padding: 8px 0;
       color: var(--color-gray-600);
@@ -789,91 +674,38 @@
       gap: 8px;
       font-size: 15px;
     }
-
     .service-card li::before {
-      content: '✓';
-      color: var(--color-gold-dark);
-      font-weight: 700;
+      content: '🌴';
+      font-size: 14px;
     }
-
-    .deals-section {
-      margin-top: 60px;
-      text-align: center;
-      padding: 40px;
-      background: rgba(212, 165, 116, 0.1);
-      border-radius: 20px;
-    }
-
-    .deals-section h3 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      color: var(--color-dark);
-    }
-
-    .deals-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 24px;
-      margin-top: 30px;
-    }
-
-    .deal-card {
-      background: white;
-      padding: 24px;
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-    }
-
-    .deal-card h4 {
-      font-size: 20px;
-      margin-bottom: 12px;
-      color: var(--color-dark);
-    }
-
-    .deal-card .price {
-      font-size: 32px;
-      font-weight: 800;
-      color: var(--color-gold-dark);
-    }
-
-    .deal-card p {
-      color: var(--color-gray-600);
-      margin-top: 8px;
-    }
-
     .process {
       padding: 100px 40px;
       background: var(--gradient-dark);
       color: white;
     }
-
     .process-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 40px;
       margin-top: 64px;
     }
-
     .process-step {
       text-align: center;
       position: relative;
     }
-
     .process-step::after {
       content: '→';
       position: absolute;
       top: 40px;
       right: -20px;
       font-size: 32px;
-      color: var(--color-gold);
+      color: var(--color-ocean-light);
       opacity: 0.3;
       font-weight: 300;
     }
-
     .process-step:last-child::after {
       display: none;
     }
-
     .step-number {
       width: 80px;
       height: 80px;
@@ -885,32 +717,27 @@
       margin: 0 auto 24px;
       font-size: 32px;
       font-weight: 800;
-      color: var(--color-dark);
-      box-shadow: 0 12px 40px rgba(212, 165, 116, 0.5);
+      color: white;
+      box-shadow: 0 12px 40px rgba(0, 180, 216, 0.5);
     }
-
     .process-step h3 {
       font-size: 20px;
       margin-bottom: 12px;
     }
-
     .process-step p {
       color: var(--color-gray-300);
       line-height: 1.7;
     }
-
     .testimonials {
       padding: 100px 40px;
       background: var(--color-gray-50);
     }
-
     .testimonials-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
       gap: 32px;
       margin-top: 64px;
     }
-
     .testimonial-card {
       background: white;
       border-radius: 20px;
@@ -918,19 +745,16 @@
       box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
       transition: all 0.3s ease;
     }
-
     .testimonial-card:hover {
       transform: translateY(-8px);
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
     }
-
     .testimonial-header {
       display: flex;
       align-items: center;
       gap: 16px;
       margin-bottom: 20px;
     }
-
     .testimonial-avatar {
       width: 60px;
       height: 60px;
@@ -941,38 +765,32 @@
       justify-content: center;
       font-size: 24px;
       font-weight: 700;
-      color: var(--color-dark);
+      color: white;
     }
-
     .testimonial-info h4 {
       font-size: 18px;
       margin-bottom: 4px;
       color: var(--color-dark);
     }
-
     .testimonial-stars {
       font-size: 16px;
-      color: var(--color-gold);
+      color: var(--color-sand);
     }
-
     .testimonial-text {
       color: var(--color-gray-600);
       line-height: 1.8;
       font-size: 16px;
     }
-
     .gallery {
       padding: 100px 40px;
       background: white;
     }
-
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 32px;
       margin-top: 48px;
     }
-
     .gallery-item {
       border-radius: 20px;
       overflow: hidden;
@@ -982,17 +800,14 @@
       transition: transform 0.3s ease;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     }
-
     .gallery-item:hover {
       transform: scale(1.05);
     }
-
     .gallery-item img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
-
     .gallery-item::after {
       content: '';
       position: absolute;
@@ -1001,41 +816,34 @@
       opacity: 0;
       transition: opacity 0.3s ease;
     }
-
     .gallery-item:hover::after {
       opacity: 1;
     }
-
     .cta {
       padding: 100px 40px;
       background: var(--gradient-primary);
-      color: var(--color-dark);
+      color: white;
       text-align: center;
       position: relative;
       overflow: hidden;
     }
-
     .cta::before {
-      content: '';
+      content: '🌺';
       position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
-      animation: rotate 20s linear infinite;
+      font-size: 600px;
+      opacity: 0.05;
+      top: -200px;
+      right: -150px;
+      animation: rotate 30s linear infinite;
     }
-
     @keyframes rotate {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
-
     .cta-content {
       position: relative;
       z-index: 1;
     }
-
     .cta h2 {
       font-family: 'Playfair Display', serif;
       font-size: clamp(36px, 5vw, 54px);
@@ -1043,70 +851,40 @@
       margin-bottom: 24px;
       letter-spacing: -1px;
     }
-
     .cta p {
       font-size: 20px;
       margin-bottom: 40px;
       opacity: 0.95;
     }
-
     .cta-actions {
       display: flex;
       gap: 16px;
       justify-content: center;
       flex-wrap: wrap;
     }
-
     .contact {
       padding: 100px 40px;
       background: var(--color-dark);
       color: white;
     }
-
     .contact-grid {
       display: grid;
       grid-template-columns: 1.2fr 1fr;
       gap: 60px;
       margin-top: 64px;
     }
-
-    .contact-form {
-      background: rgba(255, 255, 255, 0.05);
-      padding: 48px;
-      border-radius: 24px;
-      border: 2px solid rgba(212, 165, 116, 0.2);
-    }
-
-    .form-group {
-      margin-bottom: 24px;
-    }
-
-    .form-label {
-      display: block;
-      margin-bottom: 8px;
-      font-weight: 600;
-      color: white;
-    }
-
-    textarea.form-input {
-      min-height: 120px;
-      resize: vertical;
-    }
-
     .contact-info {
       display: flex;
       flex-direction: column;
       gap: 32px;
     }
-
     .info-card {
       background: var(--gradient-primary);
-      color: var(--color-dark);
+      color: white;
       padding: 32px;
       border-radius: 20px;
-      box-shadow: 0 20px 60px rgba(212, 165, 116, 0.3);
+      box-shadow: 0 20px 60px rgba(0, 180, 216, 0.3);
     }
-
     .info-card h3 {
       font-size: 24px;
       margin-bottom: 20px;
@@ -1114,7 +892,6 @@
       align-items: center;
       gap: 12px;
     }
-
     .info-card p {
       margin-bottom: 12px;
       display: flex;
@@ -1122,24 +899,20 @@
       gap: 12px;
       font-size: 16px;
     }
-
     .info-card a {
-      color: var(--color-dark);
+      color: white;
       text-decoration: none;
       transition: opacity 0.3s ease;
       font-weight: 600;
     }
-
     .info-card a:hover {
       opacity: 0.7;
     }
-
     .footer {
       background: var(--color-dark-light);
       color: var(--color-gray-400);
       padding: 80px 40px 40px;
     }
-
     .footer-grid {
       max-width: 1400px;
       margin: 0 auto;
@@ -1148,163 +921,131 @@
       gap: 60px;
       margin-bottom: 60px;
     }
-
     .footer-brand h3 {
       font-family: 'Playfair Display', serif;
-      color: var(--color-gold);
+      color: var(--color-ocean-light);
       font-size: 28px;
       margin-bottom: 16px;
     }
-
     .footer-brand p {
       line-height: 1.7;
       margin-bottom: 24px;
     }
-
     .social-links {
       display: flex;
       gap: 12px;
     }
-
     .social-link {
       width: 44px;
       height: 44px;
       border-radius: 12px;
-      background: rgba(212, 165, 116, 0.1);
+      background: rgba(0, 180, 216, 0.1);
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--color-gold);
+      color: var(--color-ocean-light);
       text-decoration: none;
       transition: all 0.3s ease;
       font-size: 18px;
     }
-
     .social-link:hover {
       background: var(--gradient-primary);
-      color: var(--color-dark);
+      color: white;
       transform: translateY(-2px);
     }
-
     .footer-col h4 {
       color: white;
       font-size: 16px;
       margin-bottom: 20px;
       font-weight: 600;
     }
-
     .footer-col ul {
       list-style: none;
     }
-
     .footer-col li {
       margin-bottom: 12px;
     }
-
     .footer-col a {
       color: var(--color-gray-400);
       text-decoration: none;
       transition: color 0.3s ease;
     }
-
     .footer-col a:hover {
-      color: var(--color-gold);
+      color: var(--color-ocean-light);
     }
-
     .footer-bottom {
       max-width: 1400px;
       margin: 0 auto;
       padding-top: 40px;
-      border-top: 1px solid rgba(212, 165, 116, 0.2);
+      border-top: 1px solid rgba(0, 180, 216, 0.2);
       text-align: center;
       font-size: 14px;
     }
-
     @media (max-width: 1024px) {
       .nav-links {
         display: none;
       }
-
       .mobile-menu-btn {
         display: block;
       }
-
       .hero-container {
         grid-template-columns: 1fr;
       }
-
       .hero-content {
         max-width: 100%;
       }
-
       .contact-grid {
         grid-template-columns: 1fr;
       }
-
       .footer-grid {
         grid-template-columns: repeat(2, 1fr);
       }
-
       .process-step::after {
         display: none;
       }
-
       .services-grid {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       }
-
       .testimonials-grid {
         grid-template-columns: 1fr;
       }
     }
-
     @media (max-width: 768px) {
       .nav-container {
         padding: 16px 20px;
       }
-
       .hero {
         padding: 80px 20px 60px;
       }
-
       .hero-content h1 {
         font-size: clamp(32px, 10vw, 48px);
       }
-
       .hero-description {
         font-size: 16px;
       }
-
       .hero-stats {
         grid-template-columns: repeat(3, 1fr);
         gap: 16px;
       }
-
       .stat-number {
         font-size: 24px;
       }
-
       .stat-label {
         font-size: 11px;
       }
-
       .hero-rating {
         padding: 16px;
         gap: 12px;
       }
-
       .rating-stars {
         font-size: 20px;
       }
-
       .rating-info h3 {
         font-size: 24px;
       }
-
       .rating-info p {
         font-size: 12px;
       }
-
       .services,
       .process,
       .gallery,
@@ -1313,115 +1054,87 @@
       .testimonials {
         padding: 60px 20px;
       }
-
       .services-grid {
         grid-template-columns: 1fr;
       }
-
       .footer-grid {
         grid-template-columns: 1fr;
         gap: 40px;
       }
-
       .carousel-btn {
         width: 40px;
         height: 40px;
         font-size: 18px;
       }
-
       .carousel-btn-prev {
         left: 20px;
       }
-
       .carousel-btn-next {
         right: 20px;
       }
-
       .carousel-overlay {
         padding: 30px;
       }
-
       .carousel-content h3 {
         font-size: 28px;
       }
-
       .carousel-content p {
         font-size: 14px;
       }
-
       .section-title {
         font-size: clamp(28px, 8vw, 42px);
       }
-
       .section-description {
         font-size: 16px;
       }
-
       .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
       }
-
-      .deals-grid {
-        grid-template-columns: 1fr;
-      }
-
       .badges-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
       }
     }
-
     @media (max-width: 480px) {
       .logo-title {
         font-size: 18px;
       }
-
       .logo-subtitle {
         font-size: 9px;
       }
-
       .logo-icon {
         width: 40px;
         height: 40px;
         font-size: 18px;
       }
-
       .btn {
         padding: 10px 16px;
         font-size: 13px;
       }
-
       .hero-actions {
         flex-direction: column;
         width: 100%;
       }
-
       .hero-actions .btn {
         width: 100%;
         justify-content: center;
       }
-
       .hero-stats {
         grid-template-columns: 1fr;
       }
-
       .top-alert {
         font-size: 12px;
         padding: 10px 16px;
       }
-
       .carousel-container {
         height: 400px;
       }
-
       .badges-grid {
         grid-template-columns: 1fr;
       }
-
       .process-grid {
         grid-template-columns: 1fr;
       }
-
       .gallery-grid {
         grid-template-columns: 1fr;
       }
@@ -1430,19 +1143,17 @@
 </head>
 <body>
   <div class="animated-bg"></div>
-
   <div class="top-alert">
     <i class="ri-scissors-cut-line"></i>
-    <strong>Walk-Ins Welcome!</strong> Open Today: 9 AM – 7 PM | Call: (909) 910-9797
+    <strong>Book Online or Walk-In!</strong> Open Today: 8 AM – 6 PM | Call: (808) 498-0293
   </div>
-
   <header class="header" id="header">
     <nav class="nav-container">
       <a href="#" class="logo">
-        <div class="logo-icon">IB</div>
+        <div class="logo-icon">🌺</div>
         <div class="logo-text">
-          <div class="logo-title">INDIAN'S BARBER</div>
-          <div class="logo-subtitle">Premium Grooming</div>
+          <div class="logo-title">The Hilo Barber Studio</div>
+          <div class="logo-subtitle">Hilo's Finest Cuts</div>
         </div>
       </a>
       <div class="nav-links">
@@ -1453,9 +1164,9 @@
         <a href="#contact">Contact</a>
       </div>
       <div class="header-actions">
-        <a href="tel:+19099109797" class="btn btn-primary">
+        <a href="tel:+18084980293" class="btn btn-primary">
           <i class="ri-phone-fill"></i>
-          Call (909) 910-9797
+          Call (808) 498-0293
         </a>
         <button class="mobile-menu-btn">
           <i class="ri-menu-line"></i>
@@ -1463,27 +1174,26 @@
       </div>
     </nav>
   </header>
-
   <section class="hero">
     <div class="hero-container">
       <div class="hero-content">
         <h1>
-          Where <span class="gradient-text">Tradition</span> Meets Modern Style
+          Hilo's <span class="gradient-text">Premier Barbershop</span> Experience
         </h1>
         <p class="hero-description">
-          Bay Area's finest barbershop experience. Expert haircuts, precision beard trims, and our signature head massage. Ranked 4.9★ by over 300 satisfied clients.
+          Professional cuts with island style. Expert barbers specializing in fades, classic cuts, and everything in between. Perfect for kids and adults alike.
         </p>
         <div class="hero-rating">
           <div class="rating-stars">★★★★★</div>
           <div class="rating-info">
-            <h3>4.9</h3>
-            <p>317 Google Reviews</p>
+            <h3>5.0</h3>
+            <p>21 Google Reviews</p>
           </div>
         </div>
         <div class="hero-actions">
-          <a href="tel:+19099109797" class="btn btn-primary">
+          <a href="tel:+18084980293" class="btn btn-primary">
             <i class="ri-phone-fill"></i>
-            Call (909) 910-9797
+            Call (808) 498-0293
           </a>
           <a href="#services" class="btn btn-white">
             <i class="ri-arrow-down-line"></i>
@@ -1492,36 +1202,36 @@
         </div>
         <div class="hero-stats">
           <div class="stat-item">
-            <span class="stat-number">10+</span>
-            <span class="stat-label">Years Serving</span>
+            <span class="stat-number">5.0★</span>
+            <span class="stat-label">Perfect Rating</span>
           </div>
           <div class="stat-item">
-            <span class="stat-number">15K+</span>
-            <span class="stat-label">Happy Clients</span>
+            <span class="stat-number">Expert</span>
+            <span class="stat-label">Skilled Barbers</span>
           </div>
           <div class="stat-item">
             <span class="stat-number">#1</span>
-            <span class="stat-label">In Milpitas</span>
+            <span class="stat-label">In Hilo</span>
           </div>
         </div>
       </div>
       <div class="hero-image">
         <div class="hero-card">
-          <h3>✂️ Walk In Anytime</h3>
-          <p style="color: var(--color-gray-300); margin-bottom: 24px; font-size: 18px;">No appointment needed. Just walk in or give us a call!</p>
-          <a href="tel:+19099109797" class="btn btn-primary" style="width: 100%; font-size: 20px; padding: 20px;">
+          <h3>✂️ Book Online or Walk In</h3>
+          <p style="color: var(--color-gray-300); margin-bottom: 24px; font-size: 18px;">Schedule your appointment online or just stop by!</p>
+          <a href="tel:+18084980293" class="btn btn-secondary" style="width: 100%; font-size: 20px; padding: 20px;">
             <i class="ri-phone-fill"></i>
-            Call (909) 910-9797
+            Call (808) 498-0293
           </a>
-          <div style="margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(212, 165, 116, 0.2);">
-            <p style="color: var(--color-gray-400); font-size: 14px; margin-bottom: 8px;"><i class="ri-time-line"></i> Open Daily</p>
-            <p style="color: white; font-size: 18px; font-weight: 600;">9:00 AM – 7:00 PM</p>
+          <div style="margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(0, 180, 216, 0.2);">
+            <p style="color: var(--color-gray-400); font-size: 14px; margin-bottom: 8px;"><i class="ri-time-line"></i> Hours</p>
+            <p style="color: white; font-size: 18px; font-weight: 600;">Mon-Sat: 8:00 AM – 6:00 PM</p>
+            <p style="color: var(--color-gray-400); font-size: 14px; margin-top: 4px;">Closed Sundays</p>
           </div>
         </div>
       </div>
     </div>
   </section>
-
   <section class="image-carousel-section">
     <div class="carousel-container">
       <div class="carousel-track" id="mainCarousel">
@@ -1529,26 +1239,26 @@
           <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=1600&q=80" alt="Modern barbershop interior">
           <div class="carousel-overlay">
             <div class="carousel-content">
-              <h3>Premium Barbershop Experience</h3>
-              <p>Clean, modern facility with a welcoming atmosphere</p>
+              <h3>Professional Barbershop</h3>
+              <p>Clean, welcoming space with island vibes</p>
             </div>
           </div>
         </div>
         <div class="carousel-slide">
-          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1600&q=80" alt="Professional barber at work">
+          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1600&q=80" alt="Expert barber cutting hair">
           <div class="carousel-overlay">
             <div class="carousel-content">
-              <h3>Expert Barbers</h3>
-              <p>Skilled professionals who understand every hair type and style</p>
+              <h3>Skilled Barbers</h3>
+              <p>Attention to detail and unmatched expertise</p>
             </div>
           </div>
         </div>
         <div class="carousel-slide">
-          <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=1600&q=80" alt="Precision haircut service">
+          <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=1600&q=80" alt="Fresh fade haircut">
           <div class="carousel-overlay">
             <div class="carousel-content">
-              <h3>Signature Services</h3>
-              <p>From classic cuts to modern styles, we do it all</p>
+              <h3>Perfect Fades</h3>
+              <p>The best fades on the island, hands down</p>
             </div>
           </div>
         </div>
@@ -1566,49 +1276,47 @@
       </div>
     </div>
   </section>
-
   <section class="trust-badges">
     <div class="container">
       <div class="badges-grid">
         <div class="badge-item">
           <div class="badge-icon">
-            <i class="ri-scissors-cut-line"></i>
-          </div>
-          <h3>Expert Barbers</h3>
-          <p>Highly trained professionals</p>
-        </div>
-        <div class="badge-item">
-          <div class="badge-icon">
-            <i class="ri-hand-heart-line"></i>
-          </div>
-          <h3>Signature Massage</h3>
-          <p>Complimentary head massage</p>
-        </div>
-        <div class="badge-item">
-          <div class="badge-icon">
             <i class="ri-star-fill"></i>
           </div>
-          <h3>4.9★ Rated</h3>
-          <p>317 five-star reviews</p>
+          <h3>5.0★ Perfect Rating</h3>
+          <p>21 five-star reviews</p>
+        </div>
+        <div class="badge-item">
+          <div class="badge-icon">
+            <i class="ri-scissors-cut-line"></i>
+          </div>
+          <h3>Skilled Staff</h3>
+          <p>Experienced professionals</p>
+        </div>
+        <div class="badge-item">
+          <div class="badge-icon">
+            <i class="ri-heart-line"></i>
+          </div>
+          <h3>Attention to Detail</h3>
+          <p>Unmatched precision</p>
         </div>
         <div class="badge-item">
           <div class="badge-icon">
             <i class="ri-user-smile-line"></i>
           </div>
-          <h3>Walk-Ins Welcome</h3>
-          <p>No appointment needed</p>
+          <h3>Kid-Friendly</h3>
+          <p>Patient with children</p>
         </div>
       </div>
     </div>
   </section>
-
   <section class="services" id="services">
     <div class="container">
       <div class="section-header">
         <span class="section-label">Our Services</span>
-        <h2 class="section-title">Premium Grooming Services</h2>
+        <h2 class="section-title">Professional Grooming Services</h2>
         <p class="section-description">
-          Expert haircuts, precision beard trims, and our famous head massage. Every service includes personalized attention and meticulous detail.
+          Expert haircuts, precision fades, and professional styling. Every service delivered with meticulous attention to detail.
         </p>
       </div>
       <div class="services-grid">
@@ -1616,14 +1324,13 @@
           <div class="service-icon">
             <i class="ri-scissors-2-line"></i>
           </div>
-          <h3>Regular Haircut</h3>
-          <div class="service-price">$20</div>
-          <p>Professional haircut tailored to your style preference with precision cutting.</p>
+          <h3>Men's Haircut</h3>
+          <p>Professional haircut tailored to your style with expert precision cutting and finishing.</p>
           <ul>
-            <li>Consultation included</li>
+            <li>Style consultation</li>
             <li>Precision cutting</li>
-            <li>Style and finish</li>
-            <li>Hot towel treatment</li>
+            <li>Professional finish</li>
+            <li>Clean lines</li>
           </ul>
         </div>
         <div class="service-card">
@@ -1631,27 +1338,12 @@
             <i class="ri-contrast-drop-2-line"></i>
           </div>
           <h3>Fades</h3>
-          <div class="service-price">$26</div>
-          <p>Expert fade haircuts with seamless blending and precision.</p>
+          <p>The best fades on the island. Seamless blending with razor-sharp precision.</p>
           <ul>
             <li>Low, mid, or high fade</li>
             <li>Smooth transitions</li>
-            <li>Clean line-ups</li>
-            <li>Professional finish</li>
-          </ul>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="ri-vip-crown-line"></i>
-          </div>
-          <h3>Haircut + Beard</h3>
-          <div class="service-price">$45</div>
-          <p>Complete grooming package for the ultimate fresh look.</p>
-          <ul>
-            <li>Full haircut service</li>
-            <li>Complete beard styling</li>
-            <li>Hot towel shave</li>
-            <li>Premium finish</li>
+            <li>Sharp line-ups</li>
+            <li>Expert technique</li>
           </ul>
         </div>
         <div class="service-card">
@@ -1659,13 +1351,12 @@
             <i class="ri-user-6-line"></i>
           </div>
           <h3>Beard Trim</h3>
-          <div class="service-price">$20</div>
-          <p>Expert beard trimming and shaping for a clean, sharp look.</p>
+          <p>Expert beard trimming and shaping for a clean, polished look.</p>
           <ul>
             <li>Precision trimming</li>
             <li>Edge line-up</li>
             <li>Shape and style</li>
-            <li>Hot towel finish</li>
+            <li>Professional finish</li>
           </ul>
         </div>
         <div class="service-card">
@@ -1673,12 +1364,11 @@
             <i class="ri-shield-star-line"></i>
           </div>
           <h3>Kids Cuts</h3>
-          <div class="service-price">$25</div>
-          <p>Gentle, patient service for children (7 and under).</p>
+          <p>Patient, professional service for children. We make it fun and easy!</p>
           <ul>
             <li>Kid-friendly approach</li>
-            <li>Quick service</li>
-            <li>Parent can assist</li>
+            <li>Patient service</li>
+            <li>Quick and efficient</li>
             <li>Great results</li>
           </ul>
         </div>
@@ -1686,42 +1376,13 @@
           <div class="service-icon">
             <i class="ri-scissors-cut-line"></i>
           </div>
-          <h3>Scissor Cut</h3>
-          <div class="service-price">$30</div>
-          <p>Classic scissor cutting technique for longer styles and texture.</p>
+          <h3>Classic Cuts</h3>
+          <p>Traditional barbering techniques for timeless, professional styles.</p>
           <ul>
-            <li>Traditional technique</li>
-            <li>Textured styling</li>
-            <li>Precision cutting</li>
-            <li>Expert finish</li>
-          </ul>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="ri-fire-line"></i>
-          </div>
-          <h3>Hot Towel Shave</h3>
-          <div class="service-price">$30</div>
-          <p>Luxurious traditional hot towel shave experience.</p>
-          <ul>
-            <li>Hot towel treatment</li>
-            <li>Premium shaving cream</li>
-            <li>Straight razor shave</li>
-            <li>Aftershave application</li>
-          </ul>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="ri-eye-line"></i>
-          </div>
-          <h3>Eyebrows</h3>
-          <div class="service-price">$10</div>
-          <p>Professional eyebrow grooming and shaping.</p>
-          <ul>
-            <li>Precision trimming</li>
-            <li>Shape and arch</li>
-            <li>Clean finish</li>
-            <li>Quick service</li>
+            <li>Classic technique</li>
+            <li>Timeless styles</li>
+            <li>Expert cutting</li>
+            <li>Professional look</li>
           </ul>
         </div>
         <div class="service-card">
@@ -1729,241 +1390,185 @@
             <i class="ri-brush-line"></i>
           </div>
           <h3>Shape Up</h3>
-          <div class="service-price">$10</div>
-          <p>Quick edge-up and line-up for a fresh, clean look.</p>
+          <p>Quick edge-up and line-up for a fresh, sharp appearance.</p>
           <ul>
             <li>Hairline edge-up</li>
             <li>Beard line-up</li>
             <li>Quick touch-up</li>
-            <li>Sharp finish</li>
+            <li>Clean finish</li>
           </ul>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="ri-user-smile-line"></i>
-          </div>
-          <h3>Senior Citizen</h3>
-          <div class="service-price">$25</div>
-          <p>Special pricing for seniors (60 and over).</p>
-          <ul>
-            <li>Full haircut service</li>
-            <li>Patient care</li>
-            <li>Comfortable experience</li>
-            <li>Respectful service</li>
-          </ul>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="ri-palette-line"></i>
-          </div>
-          <h3>Designs</h3>
-          <div class="service-price">$5</div>
-          <p>Custom hair designs and patterns added to your cut.</p>
-          <ul>
-            <li>Creative patterns</li>
-            <li>Line designs</li>
-            <li>Custom artwork</li>
-            <li>Unique style</li>
-          </ul>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="ri-drop-line"></i>
-          </div>
-          <h3>Shampoo</h3>
-          <div class="service-price">$10</div>
-          <p>Refreshing hair wash and conditioning treatment.</p>
-          <ul>
-            <li>Deep cleansing</li>
-            <li>Scalp massage</li>
-            <li>Conditioning</li>
-            <li>Relaxing experience</li>
-          </ul>
-        </div>
-      </div>
-      <div class="deals-section">
-        <h3>💈 Barber Shop Deals</h3>
-        <div class="deals-grid">
-          <div class="deal-card">
-            <h4>Regular Cut + Eyebrows</h4>
-            <p class="price">$26</p>
-            <p>Save $4 with this combo!</p>
-          </div>
-          <div class="deal-card">
-            <h4>Regular Cut + Eyebrows + Beard</h4>
-            <p class="price">$46</p>
-            <p>Complete grooming package!</p>
-          </div>
-          <div class="deal-card">
-            <h4>Monday Special</h4>
-            <p class="price">$30</p>
-            <p>Discounted rates on Mondays!</p>
-          </div>
         </div>
       </div>
     </div>
   </section>
-
   <section class="process" id="process">
     <div class="container">
       <div class="section-header">
-        <span class="section-label" style="background: rgba(212,165,116,0.2); color: var(--color-gold);">The Experience</span>
-        <h2 class="section-title" style="color: white;">What Makes Us Different</h2>
+        <span class="section-label" style="background: rgba(0,180,216,0.2); color: var(--color-ocean-light);">The Experience</span>
+        <h2 class="section-title" style="color: white;">Island Style Service</h2>
         <p class="section-description" style="color: var(--color-gray-300);">
-          We're not just a barbershop—we're a community. Here's what you can expect when you visit us.
+          Experience professional grooming with authentic Hawaiian hospitality.
         </p>
       </div>
       <div class="process-grid">
         <div class="process-step">
           <div class="step-number">1</div>
-          <h3>Warm Welcome</h3>
-          <p>Walk in and experience our friendly atmosphere. Our team greets you with a smile and makes you comfortable.</p>
+          <h3>Warm Aloha Welcome</h3>
+          <p>Walk in to friendly faces and island vibes. We make you feel at home from the moment you arrive.</p>
         </div>
         <div class="process-step">
           <div class="step-number">2</div>
           <h3>Expert Consultation</h3>
-          <p>We listen to what you want and provide professional recommendations based on your hair type and face shape.</p>
+          <p>We listen to what you want and provide professional recommendations based on your style.</p>
         </div>
         <div class="process-step">
           <div class="step-number">3</div>
           <h3>Precision Service</h3>
-          <p>Experience meticulous attention to detail as our skilled barbers craft your perfect look with expertise.</p>
+          <p>Experience unmatched attention to detail as our skilled barbers craft your perfect look.</p>
         </div>
         <div class="process-step">
           <div class="step-number">4</div>
-          <h3>Signature Touch</h3>
-          <p>Relax with our famous head massage and hot towel treatment. Leave feeling refreshed and looking sharp.</p>
+          <h3>Perfect Finish</h3>
+          <p>Leave looking sharp and feeling confident. Our work speaks for itself.</p>
         </div>
       </div>
     </div>
   </section>
-
   <section class="testimonials" id="testimonials">
     <div class="container">
       <div class="section-header">
         <span class="section-label">Testimonials</span>
         <h2 class="section-title">What Our Clients Say</h2>
         <p class="section-description">
-          Don't just take our word for it. Here's what our 300+ five-star reviews have to say.
+          Perfect 5.0-star rating from our satisfied clients. Here's what they have to say.
         </p>
       </div>
       <div class="testimonials-grid">
         <div class="testimonial-card">
           <div class="testimonial-header">
-            <div class="testimonial-avatar">JS</div>
+            <div class="testimonial-avatar">KS</div>
             <div class="testimonial-info">
-              <h4>Jeeten S</h4>
+              <h4>Kassia Salazar</h4>
               <div class="testimonial-stars">★★★★★</div>
             </div>
           </div>
           <p class="testimonial-text">
-            "This is my new goto desi haircut joint which I have been looking for over a decade. They are quite good handling kids too. I like how you can customize the way you want it, no information is lost in translation."
+            "Super grateful to Kai for helping my son with a new style. He has long curly hair so didn't really know what to ask for, but I showed him some pics and Kai did a perfect style for him. Talented barber for sure! Also, easy parking and waiting area. Really good experience here, thank you!"
           </p>
         </div>
         <div class="testimonial-card">
           <div class="testimonial-header">
-            <div class="testimonial-avatar">BR</div>
+            <div class="testimonial-avatar">LB</div>
             <div class="testimonial-info">
-              <h4>Bhargava Reddy</h4>
+              <h4>Lexi Bartolome</h4>
               <div class="testimonial-stars">★★★★★</div>
             </div>
           </div>
           <p class="testimonial-text">
-            "Good place for a haircut. Friendly and polite staff and got my haircut exactly how I want. Place is well lit and cleanliness is well maintained."
+            "Kai is the best!!! Most professional, patient, and talented barber especially for kids/toddlers. BOOK NOW!"
+          </p>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">MM</div>
+            <div class="testimonial-info">
+              <h4>Mahmoud Madia</h4>
+              <div class="testimonial-stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            "Rons fade is the best barber on the island hands down, really good price for the experience"
           </p>
         </div>
       </div>
     </div>
   </section>
-
   <section class="gallery" id="gallery">
     <div class="container">
       <div class="section-header">
         <span class="section-label">Gallery</span>
-        <h2 class="section-title">Our Work Speaks For Itself</h2>
+        <h2 class="section-title">Our Work</h2>
         <p class="section-description">
-          Take a look at our barbershop and some of the styles we've created.
+          See the quality and precision of our barbershop and cuts.
         </p>
       </div>
       <div class="gallery-grid">
         <div class="gallery-item">
-          <img src="https://lh3.googleusercontent.com/p/AF1QipN5MXvtRlMvyaPwdBCbpXD_rWMOxgm_xzA-Qo0z=w1200-h900-k-no-p" alt="Professional beard trim example" style="object-position: center 30%;">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipPqcYX1MuT9IWAWreFY4V0PHS_ITGrmbmpll12_=w1200-h900-k-no" alt="The Hilo Barber Studio interior">
         </div>
         <div class="gallery-item">
-          <img src="https://lh3.googleusercontent.com/geougc-cs/AMBA38tkeuceSw5ZLZh8ZrKtO4ilydpaQdQBlGXmRZAuAm4xn-R39h6Xmazt72DzKB3VgGti8HGw3pShUUgjLVOrj9r0czPjF0vQpkbI52sv05kh55QBxhIPINo-8-p23juZ9ia0mbDR" alt="Barbershop interior with gold chairs">
+          <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=1200&q=80" alt="Fresh fade haircut">
         </div>
         <div class="gallery-item">
-          <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSycI6o2sQLL4wHuZ3BAk7jOCl7oTNimOn4HdzIUJzdGE499vaV235AnG-a8MrPq77NWy_-wXO9HI0ZX81AvFJ91Nq08zx9sgZtnjyaHE06V2wo6bjaYqHMOCiCO2zfJDAyqoQ9gKdnoK8dR=w1200-h900-k-no" alt="Fresh fade haircut">
+          <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=1200&q=80" alt="Professional barbering tools">
         </div>
       </div>
     </div>
   </section>
-
   <section class="cta">
     <div class="cta-content">
-      <h2>Ready for a Fresh Look?</h2>
-      <p>Walk in today or call ahead. We're here to make you look and feel your best.</p>
+      <h2>Ready for Your Fresh Cut?</h2>
+      <p>Book online or walk in today. We're here to make you look your best.</p>
       <div class="cta-actions">
-        <a href="tel:+19099109797" class="btn btn-white">
+        <a href="tel:+18084980293" class="btn btn-white">
           <i class="ri-phone-fill"></i>
-          Call (909) 910-9797
+          Call (808) 498-0293
         </a>
-        <a href="https://www.google.com/maps/dir//82+N+Main+St+suite+110,+Milpitas,+CA+95035" class="btn btn-ghost" style="border-color: rgba(10,10,10,0.3); color: var(--color-dark);" target="_blank">
+        <a href="https://www.google.com/maps/dir//2064+Kilauea+Ave,+Hilo,+HI+96720" class="btn btn-ghost" style="border-color: rgba(255,255,255,0.3); color: white;" target="_blank">
           <i class="ri-map-pin-line"></i>
           Get Directions
         </a>
       </div>
     </div>
   </section>
-
   <section class="contact" id="contact">
     <div class="container">
       <div class="section-header">
-        <span class="section-label" style="background: rgba(212,165,116,0.2); color: var(--color-gold);">Contact Us</span>
-        <h2 class="section-title" style="color: white;">Visit Us Today</h2>
+        <span class="section-label" style="background: rgba(0,180,216,0.2); color: var(--color-ocean-light);">Contact Us</span>
+        <h2 class="section-title" style="color: white;">Visit Us in Hilo</h2>
         <p class="section-description" style="color: var(--color-gray-300);">
-          Walk-ins welcome! No appointment needed.
+          Book online or walk-in welcome!
         </p>
       </div>
       <div style="max-width: 800px; margin: 64px auto 0; display: grid; gap: 32px;">
         <div class="info-card" style="text-align: center;">
           <h3 style="justify-content: center; font-size: 32px; margin-bottom: 24px;">
             <i class="ri-phone-line"></i>
-            Call Us Now
+            Call or Text
           </h3>
-          <a href="tel:+19099109797" style="font-size: 48px; font-weight: 900; display: block; margin-bottom: 16px; text-decoration: none; color: var(--color-dark);">(909) 910-9797</a>
-          <p style="font-size: 18px;">Open Daily: 9:00 AM – 7:00 PM</p>
+          <a href="tel:+18084980293" style="font-size: 48px; font-weight: 900; display: block; margin-bottom: 16px; text-decoration: none; color: white;">(808) 498-0293</a>
+          <p style="font-size: 18px;">Mon-Sat: 8:00 AM – 6:00 PM</p>
+          <p style="font-size: 16px; opacity: 0.9; margin-top: 8px;">Closed Sundays</p>
         </div>
         <div class="info-card">
           <h3>
             <i class="ri-map-pin-line"></i>
             Our Location
           </h3>
-          <p><i class="ri-map-pin-2-fill"></i> 82 N Main St Suite 110, Milpitas, CA 95035</p>
-          <p><i class="ri-time-line"></i> Open Daily: 9:00 AM – 7:00 PM</p>
-          <p><i class="ri-user-smile-line"></i> Walk-ins Always Welcome</p>
-          <a href="https://www.google.com/maps/dir//82+N+Main+St+suite+110,+Milpitas,+CA+95035" target="_blank" style="display: inline-block; margin-top: 16px; padding: 12px 24px; background: var(--color-dark); color: var(--color-gold); border-radius: 12px; text-decoration: none; font-weight: 600;">
+          <p><i class="ri-map-pin-2-fill"></i> 2064 Kilauea Ave, Hilo, HI 96720</p>
+          <p><i class="ri-time-line"></i> Mon-Sat: 8:00 AM – 6:00 PM</p>
+          <p><i class="ri-user-smile-line"></i> Walk-Ins & Appointments Welcome</p>
+          <a href="https://www.google.com/maps/dir//2064+Kilauea+Ave,+Hilo,+HI+96720" target="_blank" style="display: inline-block; margin-top: 16px; padding: 12px 24px; background: white; color: var(--color-ocean); border-radius: 12px; text-decoration: none; font-weight: 600;">
             <i class="ri-map-pin-line"></i> Get Directions
           </a>
         </div>
-        <div class="info-card" style="background: var(--gradient-accent);">
+        <div class="info-card" style="background: var(--gradient-secondary);">
           <h3>
             <i class="ri-star-fill"></i>
-            Highly Rated
+            Perfect Rating
           </h3>
-          <p><i class="ri-star-fill"></i> 4.9★ Rating on Google</p>
-          <p><i class="ri-user-heart-line"></i> 317+ Five-Star Reviews</p>
-          <p><i class="ri-shield-check-line"></i> Bay Area's #1 Choice</p>
+          <p><i class="ri-star-fill"></i> 5.0★ Rating on Google</p>
+          <p><i class="ri-user-heart-line"></i> 21 Five-Star Reviews</p>
+          <p><i class="ri-shield-check-line"></i> Hilo's Top Choice</p>
         </div>
       </div>
     </div>
   </section>
-
   <footer class="footer">
     <div class="footer-grid">
       <div class="footer-brand">
-        <h3>INDIAN'S BARBER</h3>
-        <p>Bay Area's premier barbershop offering expert haircuts, beard trims, and our signature head massage since 2014.</p>
+        <h3>The Hilo Barber Studio</h3>
+        <p>Hilo's premier barbershop offering expert cuts, precision fades, and professional grooming with island hospitality.</p>
         <div class="social-links">
           <a href="#" class="social-link"><i class="ri-facebook-fill"></i></a>
           <a href="#" class="social-link"><i class="ri-instagram-line"></i></a>
@@ -1973,9 +1578,9 @@
       <div class="footer-col">
         <h4>Services</h4>
         <ul>
-          <li><a href="#services">Haircuts</a></li>
+          <li><a href="#services">Men's Haircuts</a></li>
+          <li><a href="#services">Fades</a></li>
           <li><a href="#services">Beard Trims</a></li>
-          <li><a href="#services">Head Massage</a></li>
           <li><a href="#services">Kids Cuts</a></li>
         </ul>
       </div>
@@ -1986,58 +1591,3 @@
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#testimonials">Reviews</a></li>
           <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="tel:+19099109797">(909) 910-9797</a></li>
-          <li>82 N Main St Suite 110</li>
-          <li>Milpitas, CA 95035</li>
-          <li>Mon-Sun: 9AM-7PM</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 Indian's Barber. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.carousel-slide');
-    const indicators = document.querySelectorAll('.carousel-indicator');
-    const track = document.getElementById('mainCarousel');
-
-    function moveCarousel(direction) {
-      currentSlide = (currentSlide + direction + slides.length) % slides.length;
-      updateCarousel();
-    }
-
-    function goToSlide(index) {
-      currentSlide = index;
-      updateCarousel();
-    }
-
-    function updateCarousel() {
-      track.style.transform = `translateX(-${currentSlide * 100}%)`;
-      indicators.forEach((indicator, index) => {
-        indicator.classList.toggle('active', index === currentSlide);
-      });
-    }
-
-    setInterval(() => {
-      moveCarousel(1);
-    }, 5000);
-
-    window.addEventListener('scroll', () => {
-      const header = document.getElementById('header');
-      if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
-  </script>
-</body>
-</html>
